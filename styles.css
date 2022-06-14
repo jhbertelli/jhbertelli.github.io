@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+header {
+    background-color: rgb(98, 184, 76);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    
+    font-weight: 300;
+    font-size: 20pt;
+    text-transform: uppercase;
+    color: white;
+}
+
+h1 {
+    font-size: 30pt;
+    margin-top: 40px;
+    text-align: center;
+}
+
+h2 {
+    color: rgb(49, 49, 49);
+    font-size: 17pt;
+    font-weight: 500;
+    margin-top: 8px;
+    text-align: center;
+}
+
+.input-wrapper {
+    width: 100%;
+    height: 60px;
+    margin-top: 60px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgb(89, 168, 70);
+}
+
+.input-wrapper input {
+    width: 300px;
+    height: 35px;
+    font-size: 20px;
+    border: 0px;
+    padding-left: 5px;
+}
+
+#game {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 33% 33% 33%;
+    gap: 30px;
+
+    width: 90%;
+    margin-top: 60px;
+}
+
+.groups {
+    width: 90%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.groups span {
+    font-weight: 600;
+}
+
+.national-teams-wrapper {
+    border: 1px gray solid;
+    border-radius: 5px;
+    width: 100%;
+    padding: 8px 10px 8px 10px;
+    margin-top: 8px;
+}
+
+.national-team {
+    display: flex;
+    padding: 10px 0 10px 0;
+    width: 100%;
+    border-bottom: 1px solid gray;
+}
+
+.national-team div {
+    width: 50%;
+}
+
+.answer {
+    text-align: right;
+    font-weight: 600;
+}
+
+
+
+@media (max-width: 600px) {
+    #game {
+        display: block;
+        margin-top: 50px;
+    }
+    .groups {
+        margin: 0 auto 20px auto;
+    }
+}
