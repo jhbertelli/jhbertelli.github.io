@@ -1,7 +1,7 @@
 const teamInput = document.querySelector('#team-input')
 let totalCountries = 0
 
-teamInput.addEventListener('keyup', (event) => {    
+teamInput.addEventListener('keyup', () => {    
     let teamValue = document.querySelector('#team-input').value.toLowerCase().trim()
 
     for (let [key, value] of Object.entries(countries)) {
