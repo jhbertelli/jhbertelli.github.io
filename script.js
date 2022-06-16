@@ -1,8 +1,9 @@
 const teamInput = document.querySelector('#team-input')
 let totalCountries = 0
 
-teamInput.addEventListener('keyup', () => {    
+teamInput.addEventListener('keyup', () => {
     let teamValue = document.querySelector('#team-input').value.toLowerCase().trim()
+    const teamsCounter = document.querySelector('#teams-counter')
 
     for (let [key, value] of Object.entries(countries)) {
         for (let groupCountry = 0; groupCountry < value.length; groupCountry++) {
@@ -15,6 +16,7 @@ teamInput.addEventListener('keyup', () => {
                         document.querySelector('#team-input').value = ''
                         group.scrollIntoView()
                         totalCountries++
+                        teamsCounter.textContent = totalCountries + ' / 32'
                         if (totalCountries === 32) {
                             document.querySelector('main').innerHTML += '<div id="congratulations"><h3>Parabéns!</h3><h4>Você acertou todos os países presentes na copa.</h4><button>Fechar</button></div>'
                             let congratulations = document.querySelector('#congratulations')
