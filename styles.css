@@ -163,7 +163,7 @@ h2 {
 
     background-color: white;
     
-    border: 1px solid gray;
+    border: 2px solid gray;
     border-radius: 5px;
 
     display: flex;
@@ -223,7 +223,7 @@ h4 {
         text-align: center;
     }
     .time {
-        margin: 0;
+        margin: 3px 0 0 0;
         font-size: 20px;
     }
     #timer {

@@ -1,10 +1,11 @@
 const timer = document.querySelector('#timer')
 let minute = 6
 let second = '00'
+let started = false
 timer.textContent = minute + ':' + second
 
 teamInput.addEventListener('click', () => {
-    if (minute == 6) {
+    if (started == false) {
         let counter = setInterval(() => {
 
             if (totalCountries === 32) {
@@ -43,4 +44,5 @@ teamInput.addEventListener('click', () => {
 
         }, 1000)
     }
+    started = true
 })
